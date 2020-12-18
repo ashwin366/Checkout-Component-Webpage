@@ -8,7 +8,7 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
+    <link rel="icon" href="images/devchallenges.png" />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -19,9 +19,110 @@
 
   </head>
   <body>
-    <h1>Checkout</h1>
-    
-    <h3>Contact information</h3>
-    
+
+    <main>
+      <h1>Checkout</h1>
+
+      <main class="l-container">
+        <div class="l-container__item1">
+          <h2>Contact information</h2>
+
+          <form class="" action="index.html" method="post">
+            <label class="item1__label" for="email">E-mail</label>
+            <input class="item1__text-input text-input--long text-input--high" type="email" name="email" id="email" placeholder="Enter your email...">
+
+            <label class="item1__label" for="phone-no">Phone</label>
+            <input class="item1__text-input text-input--long text-input--high" type="number" name="phone-no" id="phone-no" placeholder="Enter your phone...">
+
+
+            <h2>Shipping address</h2>
+            <label class="item1__label" for="name">Full name</label>
+            <input class="item1__text-input text-input--long text-input--high" type="text" name="name" id="name" placeholder="Your full name..">
+
+            <label class="item1__label" for="address">Address</label>
+            <input class="item1__text-input text-input--long text-input--low" type="text" name="address" id="address" placeholder="Your address..">
+
+            <label class="item1__label" for="city">City</label>
+            <input class="item1__text-input text-input--long text-input--low" type="text" name="city" id="city" placeholder="Your city..">
+
+            <div class="item1__area">
+              <div class="item1__country">
+                <label class="item1__label" for="country">Country</label>
+                <input class="item1__text-input text-input--short" type="text" name="country" id="country" placeholder="Your country..">
+              </div>
+              <div class="item1__postal">
+                <label class="item1__label" for="postal-code">Postal Code</label>
+                <input class="item1__text-input text-input--short" type="number" name="postal-code" id="postal-code" placeholder="Your postal code..">
+              </div>
+
+            </div>
+
+            <input type="checkbox" id="save-info">
+            <label for="save-info" class="item1__label label__checkbox">Save this information for next time</label>
+
+            <button class="item1__btn btn"type="submit" name="button">Continue</button>
+
+          </form>
+        </div>
+
+        <div class="l-container__item2">
+          <div class="item2__wrapper">
+            <div class="item2__product">
+              <div class="item2__image__wrapper">
+                <img class="item2__image" src="images/photo1.png" alt="photo1">
+              </div>
+              <div class="item2__content__wrapper">
+                <p class="item2__product-name">Vintage Backbag</p>
+                <span class="item2__product-price">$54.99</span>
+                <span class="item2__product-price--cancelled">$94.99</span>
+                <div class="item2__product__quantity">
+                  <button class="btn__quantity" type="button" name="increment">-</button>
+                  <span class="btn__quantity__text">1</span>
+                  <button class="btn__quantity" type="button" name="decrement">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item2__product">
+              <div class="item2__image__wrapper">
+                <img class="item2__image" src="images/photo2.png" alt="photo2">
+              </div>
+              <div class="item2__content__wrapper">
+                <p class="item2__product-name">Levi Shoes</p>
+                <span class="item2__product-price">$74.99</span>
+                <span class="item2__product-price--cancelled">$124.99</span>
+                <div class="item2__product__quantity">
+                  <button class="btn__quantity" type="button" name="increment">-</button>
+                  <span class="btn__quantity__text">1</span>
+                  <button class="btn__quantity" type="button" name="decrement">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item2__price__wrapper">
+              <hr>
+              <div class="item2__price">
+                <p class="price__text">Shipping</p>
+                <p class="price__dollar">$19</p>
+              </div>
+              <hr>
+              <div class="item2__price item2__price--low">
+                <p class="price__text">Total</p>
+                <p class="price__dollar">$148.98</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="l-footer">
+      <p class="l-footer__text">Ashwin Sasikumar @ DevChallenges.io</p>
+    </footer>
+
+
   </body>
 </html>
