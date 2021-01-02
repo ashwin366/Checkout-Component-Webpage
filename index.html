@@ -28,35 +28,42 @@
 
       <form class="" action="index.html" method="post">
         <label class="item1__label" for="email">E-mail</label>
-        <input class="item1__text-input text-input--long text-input--high" type="email" name="email" id="email" placeholder="Enter your email...">
+        <input class="item1__text-input text-input--long text-input--high" type="email" name="email" id="email" placeholder="Enter your email..." required>
 
         <label class="item1__label" for="phone-no">Phone</label>
-        <input class="item1__text-input text-input--long text-input--high" type="number" name="phone-no" id="phone-no" placeholder="Enter your phone...">
+        <input class="item1__text-input text-input--long text-input--high" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="phone-no" id="phone-no" placeholder="Enter your phone..." required>
 
 
         <h2>Shipping address</h2>
         <label class="item1__label" for="name">Full name</label>
-        <input class="item1__text-input text-input--long text-input--high" type="text" name="name" id="name" placeholder="Your full name..">
+        <input class="item1__text-input text-input--long text-input--high" type="text" name="name" id="name" placeholder="Your full name.." required>
 
         <label class="item1__label" for="address">Address</label>
-        <input class="item1__text-input text-input--long text-input--low" type="text" name="address" id="address" placeholder="Your address..">
+        <input class="item1__text-input text-input--long text-input--low" type="text" name="address" id="address" placeholder="Your address.." required>
 
         <label class="item1__label" for="city">City</label>
-        <input class="item1__text-input text-input--long text-input--low" type="text" name="city" id="city" placeholder="Your city..">
+        <input class="item1__text-input text-input--long text-input--low" type="text" name="city" id="city" placeholder="Your city.." required>
 
         <div class="item1__area">
           <div class="item1__country">
             <label class="item1__label" for="country">Country</label>
-            <input class="item1__text-input text-input--short" type="text" name="country" id="country" placeholder="Your country..">
+            <select class="item1__text-input text-input--short" name="country" id="country" required>
+              <option class="default-country" value="country">Your country..</option>
+              <option value="USA">USA</option>
+              <option value="India">India</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Russia">Russia</option>
+              <option value="Qatar">Qatar</option>
+            </select>
           </div>
           <div class="item1__postal">
             <label class="item1__label" for="postal-code">Postal Code</label>
-            <input class="item1__text-input text-input--short" type="number" name="postal-code" id="postal-code" placeholder="Your postal code..">
+            <input class="item1__text-input text-input--short" type="numeric" name="postal-code" id="postal-code" placeholder="Your postal code.." required>
           </div>
 
         </div>
 
-        <input type="checkbox" id="save-info">
+        <input type="checkbox" id="save-info" required>
         <label for="save-info" class="item1__label label__checkbox">Save this information for next time</label>
 
         <button class="item1__btn btn" type="submit" name="button">Continue</button>
